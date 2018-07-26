@@ -19,5 +19,5 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
 db.collection('todos').findOneAndDelete({completed:true}).then((result)=>{
     console.log(result)
 },(err)=>{console.log('error in findoneanddelete',err)});
-  db.close();
+ // db.close();
 })
